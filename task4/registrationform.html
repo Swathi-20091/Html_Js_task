@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>
@@ -14,25 +14,26 @@
         
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" class="form">
                   <table class="div1">  
+			  <caption></caption>
                         <tr>
-                        <td><label for="">UserName : </label></td>
+                        <th><label for="">UserName : </label></th>
                     <td> <input type="text" placeholder="Enter Your Name" id = "username" autocomplete="off"></td>
                     </tr>
                    
 
                    <tr>
-                    <td> <label for="">Date Of Birth</label></td>
+                    <th> <label for="">Date Of Birth</label></th>
                      <td> <input type="Date" name="DOB" id="DOB"></td>
                    </tr>
                        
                     
                     <tr>
-                        <td> <label for="">Age</label></td>
+                        <th> <label for="">Age</label></th>
                             <td> <input type="number" name="Age" id="Age" placeholder="Enter Your age"></td>
                     </tr>
 
                     <tr>
-                    <td>Gender</td>
+                    <th>Gender</th>
                     <td>
                         <input type="radio" id="male" name="gender" value="Male">Male<br>
                         <input type="radio" id="female" name="gender" value="Female">Female<br>
@@ -41,18 +42,18 @@
                 </tr>
                     
                     <tr>
-                        <td>Languages Known</td>
+                        <th>Languages Known</th>
                         <td> <input type="checkbox" id="English" name="English" value="English">English<br>
                         <input type="checkbox" id="Tamil" name="Tamil" value="Tamil">Tamil<br>
                         <input type="checkbox" id="Hindi" name="Hindi" value="Hindi">Hindi<br>
                     </td>
                 </tr>
                 <tr>
-                    <td>Email :</td>
+                    <th>Email :</th>
                     <td><input type="text" placeholder="Enter Your email" id = "email" autocomplete="off"></td>
                     </tr>
                     <tr>
-                        <td>Phone Number : </td>
+                        <th>Phone Number : </th>
                         <td><input type="text" placeholder="Enter your phonenumber(must be 10 digit)" id = "phonenumber" autocomplete="off"></td>
                     </tr>
                     <tr>
@@ -64,6 +65,7 @@
 		<br/>
 		<h2>Table</h2>
                 <table class="list" >
+			<caption></caption>
                     <thead>
                         <tr>
                             <th>UserName</th>
