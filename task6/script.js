@@ -1,6 +1,6 @@
 
 var myTabs = document.querySelectorAll(".collapsible");
-for (let i = 0; i < myTabs.length; i++) {
+for (let i of myTabs) {
 myTabs[i].addEventListener("click", function() {
     var cont = myTabs[i].nextElementSibling;
     if (cont.style.maxHeight){
