@@ -159,7 +159,7 @@ function onEdit(td){
     document.getElementById('phonenumber').value = selectedRow.cells[6].innerHTML;
 }
 //update the data
-function updateRecord(){
+function updateRecord(formData){
     selectedRow.cells[0].innerHTML = formData.username;
     selectedRow.cells[1].innerHTML = formData.DOB;
     selectedRow.cells[2].innerHTML = formData.Age;
