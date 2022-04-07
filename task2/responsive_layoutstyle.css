@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.columnone{
+  background-image: url('/home/tringapps/Documents/html/rose1.webp');
+}
+.columntwo{
+  background-image: url('/home/tringapps/Documents/html/rose2.webp');
+}
+.columnthree{
+background-image: url('/home/tringapps/Documents/html/rose3.jpeg');
+}
+.columnone,.columntwo,.columnthree{
+  flex: 33%;
+  border:2px solid;
+  padding: 150px;
+   background-size: cover;
+   background-size: 100% 100%;
+}
+.header {
+  background-color: #9933cc;
+  color: #ffffff; 
+  text-align: center;
+  padding: 32px;
+}
+.sign{ 
+  flex: 100%;
+  padding: 150px;
+  background-image: url('/home/tringapps/Documents/html/rose4.jpg');
+   background-size: cover;
+   background-size: 100% 100%;
+}
+.footer {
+  background-color: #cccccc;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;  
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+  .columnone,.columntwo,.columnthree,.sign{
+    flex: 50%;
+  }
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+  .columnone,.columntwo,.columnthree,.sign{
+    flex: 100%;
+  }
+}
+.navbar{
+height:30px;
+background-color:green;
+}
+.nav{
+height:30px;
+float:right;
+background-image:url("spriteimage.svg");
+background-position:-307px 43px;
+width:154px;
+}

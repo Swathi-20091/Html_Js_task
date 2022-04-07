@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD OPERATIONS
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+            <h2>Registration Form</h2>
+        
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" class="form">
+                  <table class="div1">  
+                        <tr>
+                        <td><label for="">UserName : </label></td>
+                    <td> <input type="text" placeholder="Enter Your Name" id = "username" autocomplete="off"></td>
+                    </tr>
+                   
+
+                   <tr>
+                    <td> <label for="">Date Of Birth</label></td>
+                     <td> <input type="Date" name="DOB" id="DOB"></td>
+                   </tr>
+                       
+                    
+                    <tr>
+                        <td> <label for="">Age</label></td>
+                            <td> <input type="number" name="Age" id="Age" placeholder="Enter Your age"></td>
+                    </tr>
+
+                    <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male">Male<br>
+                        <input type="radio" id="female" name="gender" value="Female">Female<br>
+                        <input type="radio" id="others" name="gender" value="Others">Others<br>
+                    </td>
+                </tr>
+                    
+                    <tr>
+                        <td>Languages Known</td>
+                        <td> <input type="checkbox" id="English" name="English" value="English">English<br>
+                        <input type="checkbox" id="Tamil" name="Tamil" value="Tamil">Tamil<br>
+                        <input type="checkbox" id="Hindi" name="Hindi" value="Hindi">Hindi<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="text" placeholder="Enter Your email" id = "email" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number : </td>
+                        <td><input type="text" placeholder="Enter your phonenumber(must be 10 digit)" id = "phonenumber" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                   <td> <button id = 'submit' >Submit</button></td>
+                    </tr>
+                    </table>
+                </form>
+		
+		<br/>
+		<h2>Table</h2>
+                <table class="list" >
+                    <thead>
+                        <tr>
+                            <th>UserName</th>
+                            <th>Date Of Birth</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Languages Known</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            
+                    </tbody>
+                </table>
+        
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body
+{
+ 
+  background-image: linear-gradient(to left , lightgreen ,skyblue);
+  
+}
+h2 {
+  text-align:center;
+text-shadow: 2px 2px;
+font-family:Lucida Handwriting,Cursive;
+font-style:italic;
+font-size:2.5em;
+Color:black;
+
+}
+.div1, .list {
+  
+background-image: linear-gradient(to left  ,skyblue, lightgreen);
+  border-radius: 20px 20px 20px 20px;
+  box-align: center;
+  color: black;
+  padding: 10px;
+ 
+margin-right: 400px;
+  margin-left: 400px;
+  font-size: 1rem;
+}
+td{
+    height: 30px;
+}
+.form #submit{
+    background-color:  skyblue;
+    border: 1px solid black;
+    outline: none;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background-color: lightgreen;
+}
+th,td{
+    font-family: 'Open Sans',Sans-serif;
+    text-transform: uppercase;
+   
+   }

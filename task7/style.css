@@ -1,0 +1,38 @@
+body{
+    background-image: linear-gradient(to left , lightgreen ,skyblue);
+  
+  }
+h2 {
+    text-align:center;
+  text-shadow: 2px 2px;
+  font-family:Lucida Handwriting,Cursive;
+  font-style:italic;
+  font-size:2.5em;
+  Color:black;
+}
+h4,figcaption{
+    font-family:Lucida Handwriting,Cursive;
+    font-style:italic;
+    font-size:1.5em;
+    Color:black;
+}
+* {
+    box-sizing: border-box;
+  }
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+   
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  img{
+    height: 300px;
+    width: 300px;
+  }
