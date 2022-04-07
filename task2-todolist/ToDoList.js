@@ -51,7 +51,7 @@ function store(){
     var pw = document.getElementById('pw');
     var lowerCaseLetters = /[a-z]/g;
     var upperCaseLetters = /[A-Z]/g;
-    var numbers = /[0-9]/g;
+    var numbers = /d/g;
 
     if(name.value.length == 0){
         alert('Please fill in email');
