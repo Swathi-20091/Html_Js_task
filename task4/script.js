@@ -45,7 +45,7 @@ function validateGender() {
     }
 }
 function validatePhoneNumber() {
-  const validPhone = /^[987]{1}[0-9]{9}$/;
+  const validPhone = /^[987]{1}\d{9}$/;
   if (document.getElementById('phonenumber').value !== "" && validPhone.test(document.getElementById("phonenumber").value)) {
     formData["phonenumber"]  = document.getElementById('phonenumber').value;
     return true;
@@ -82,7 +82,7 @@ function validateLanguage() {
  }
  //read from data
 function readFormData(){
-    var formData = {};
+    
     formData["username"] = document.getElementById("username").value;
     formData["DOB"] = document.getElementById("DOB").value;
     formData["Age"] = document.getElementById("Age").value;
@@ -129,8 +129,8 @@ function insertNewRecord(data){
         cell6.innerHTML = data.email;
     var cell7 = newRow.insertCell(6);
         cell7.innerHTML = data.phonenumber;
-    var cell7 = newRow.insertCell(7);
-        cell7.innerHTML = `<button id="edit" onClick='onEdit(this)'>Edit</button> <button onClick='onDelete(this)'>Delete</button>`
+    var cell8 = newRow.insertCell(7);
+        cell8.innerHTML = `<button id="edit" onClick='onEdit(this)'>Edit</button> <button onClick='onDelete(this)'>Delete</button>`
 }
 
 //Edit the data
@@ -173,7 +173,7 @@ function updateRecord(formData){
 //Delete the data
 function onDelete(td){
     if(confirm('Do you want to delete this record?')){
-        row = td.parentElement.parentElement;
+         var row = td.parentElement.parentElement;
         document.getElementById('List').deleteRow(row.rowIndex);
     }
     resetForm();
