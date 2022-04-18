@@ -7,7 +7,8 @@ function validateName() {
            return true;
     } else {
       alert("Please Enter Valid Name");
-      return false;
+      return false; 
+	    
     }
 }
 
